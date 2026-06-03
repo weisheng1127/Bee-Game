@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🐝 Bee Pollination Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="game-container">
+
+    <!-- Background -->
+    <img id="bg" src="上課資源/上課資源/bg.png" alt="background" />
+
+    <!-- Bee wrapper: JS controls position & left/right flip -->
+    <div id="bee-wrapper" class="sprite">
+      <img id="bee" src="上課資源/上課資源/bee.png" alt="bee" />
+    </div>
+
+    <!-- Dragonfly (near bee, slightly upper) -->
+    <img id="dragonfly" class="sprite" src="上課資源/上課資源/dragonfly.png" alt="dragonfly" />
+
+    <!-- Flower 1 – pink flower, upper center -->
+    <img id="flower1" class="sprite target-flower" src="上課資源/上課資源/flower1.png" alt="flower 1" />
+
+    <!-- Flower 2 – red flower, right side -->
+    <img id="flower2" class="sprite target-flower" src="上課資源/上課資源/Flower-4.png" alt="flower 2" />
+
+    <!-- Garlic – upper right area -->
+    <img id="garlic" class="sprite" src="上課資源/上課資源/garlic.png" alt="garlic" />
+
+    <!-- Berry – lower center area -->
+    <img id="berry" class="sprite" src="上課資源/上課資源/berry.png" alt="berry" />
+
+    <!-- Arrow controls (bottom area, separated from sprites) -->
+    <div id="controls">
+      <!-- Row 1: Up -->
+      <div class="arrow-row">
+        <div class="arrow-slot empty"></div>
+        <div class="arrow-slot" id="btn-up">
+          <img class="arrow-img arrow-up" src="上課資源/上課資源/arrow.png" alt="up" />
+        </div>
+        <div class="arrow-slot empty"></div>
+      </div>
+      <!-- Row 2: Left / Down / Right -->
+      <div class="arrow-row">
+        <div class="arrow-slot" id="btn-left">
+          <img class="arrow-img arrow-left" src="上課資源/上課資源/arrow.png" alt="left" />
+        </div>
+        <div class="arrow-slot" id="btn-down">
+          <img class="arrow-img arrow-down" src="上課資源/上課資源/arrow.png" alt="down" />
+        </div>
+        <div class="arrow-slot" id="btn-right">
+          <img class="arrow-img arrow-right" src="上課資源/上課資源/arrow.png" alt="right" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Win Message -->
+    <div id="win-message">You did it!</div>
+
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
